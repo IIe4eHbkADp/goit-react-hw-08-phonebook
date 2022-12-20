@@ -5,7 +5,6 @@ import {
   LayoutList,
   LayoutItem,
   LayoutNavLink,
-  BgImg,
 } from './Pages.styled';
 
 export const Layout = () => {
