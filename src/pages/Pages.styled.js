@@ -1,6 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+const LayoutLoggedBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const LayoutBox = styled.div`
   display: flex;
 `;
@@ -24,7 +29,7 @@ const LayoutNavLink = styled(NavLink)`
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
-  color: orchid;
+  color: #23fe68;
 
   &.active {
     text-decoration: underline;
@@ -33,13 +38,8 @@ const LayoutNavLink = styled(NavLink)`
 
   :hover:not(.active),
   :focus-visible:not(.active) {
-    color: #2196f3;
+    color: #23fe68;
   }
-`;
-
-const BgImg = styled.img`
-  margin-left: 100px;
-  margin-top: 20px;
 `;
 
 export const PagesToptext = styled.h1`
@@ -50,10 +50,10 @@ export const PagesToptext = styled.h1`
 `;
 
 export {
+  LayoutLoggedBox,
   LayoutBox,
   LayoutMainBox,
   LayoutList,
   LayoutItem,
   LayoutNavLink,
-  BgImg,
 };
